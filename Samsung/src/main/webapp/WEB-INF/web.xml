@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE web-app
+    PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+    "http://java.sun.com/dtd/web-app_2_3.dtd">
+<web-app>
+
+	<welcome-file-list>
+		<welcome-file>samsung.html</welcome-file>
+	</welcome-file-list>
+
+	<servlet>
+	<servlet-name>save</servlet-name>
+	<servlet-class>com.xworkz.samsung.sevlets.Samsung</servlet-class>
+	<servlet-class>com.xworkz.samsung.sevlets.LG</servlet-class>
+	<servlet-class>com.xworkz.samsung.sevlets.Godrej</servlet-class>
+	<servlet-class>com.xworkz.samsung.sevlets.Whirlpool</servlet-class>
+	<servlet-class>com.xworkz.samsung.sevlets.Haier</servlet-class>
+	<servlet-class>com.xworkz.samsung.sevlets.Bosch</servlet-class>
+	<servlet-class>com.xworkz.samsung.sevlets.panasonic</servlet-class>
+	
+	
+	<load-on-startup>1</load-on-startup>
+	</servlet>
+	
+	<servlet-mapping>
+	<servlet-name>save</servlet-name>
+	<url-pattern>/save</url-pattern>
+	</servlet-mapping>
+	
+</web-app>
